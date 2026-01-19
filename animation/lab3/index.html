@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 3 - JS Animation & Interaction</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <div id="cursor-circle" class="circle"></div>
+
+    <nav class="sticky-nav">
+        <ul>
+            <li><a href="#section1" class="nav-link">Bài 1 & 2</a></li>
+            <li><a href="#section2" class="nav-link">Bài 3 (Scroll)</a></li>
+            <li><a href="#section3" class="nav-link">Bài 4 (Hover)</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="section1" class="content-section">
+            <h2>Bài 1: Đổi nền trang</h2>
+            <button id="bg-toggle-btn">Đổi nền</button>
+            <p>Cuộn xuống để xem các bài tiếp theo.</p>
+        </section>
+
+        <section id="section2" class="content-section">
+            <h2>Bài 3: Hiệu ứng xuất hiện khi cuộn</h2>
+            <div class="box-container">
+                <div class="reveal-box">Box 1</div>
+                <div class="reveal-box">Box 2</div>
+                <div class="reveal-box">Box 3</div>
+            </div>
+        </section>
+
+        <section id="section3" class="content-section">
+            <h2>Bài 4: Nút "nhảy lên" khi hover</h2>
+            <button id="jump-btn">Hover Me!</button>
+        </section>
+    </main>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

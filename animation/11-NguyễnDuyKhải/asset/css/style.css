@@ -1,0 +1,239 @@
+
+:root {
+    --primary: #ff0011; 
+    --bg: #ffffff;
+    --text: #333333;
+}
+
+
+[data-theme="dark"] {
+    --bg: #000000;
+    --text: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--text);
+    transition: 0.3s;
+}
+
+
+.chuot {
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--primary);
+    border-radius: 50%;
+    position: fixed;
+    pointer-events: none;
+    z-index: 9999;
+    transition: 0.1s ease-out;
+}
+
+/*11-Nguyễn Duy Khải*/
+.navbar {
+    position: fixed;
+    top: 0; width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+    background: rgba(0,0,0,0.8);
+    z-index: 100;
+}
+
+.logo { color: white; font-weight: bold; font-size: 24px; }
+.logo span { color: var(--primary); }
+
+.nav-links { display: flex; list-style: none; }
+.nav-links li { margin: 0 15px; position: relative; }
+
+.nav-item {
+    text-decoration: none;
+    color: white;
+    padding: 5px 0;
+}
+
+/*11-Nguyễn Duy Khải*/
+.nav-item::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0;
+    width: 0; height: 2px;
+    background: var(--primary);
+    transition: 0.3s;
+}
+.nav-item:hover::after, .nav-item.active::after {
+    width: 100%;
+}
+.nav-item.active { color: var(--primary); }
+
+
+.hero {
+    height: 87vh;
+    background: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    animation: hero 2s ease-in;
+}
+@keyframes hero{
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+
+.fade-in-text {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 2s forwards;
+}
+@keyframes fadeIn {
+    to { opacity: 1; transform: translateY(0); }
+}
+
+
+.chuchay {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    overflow: hidden;
+    background: var(--primary);
+    padding: 10px 0;
+}
+.chuchay span {
+    display: inline-block;
+    white-space: nowrap;
+    animation: chay 10s linear infinite;
+}
+@keyframes chay {
+    from { transform: translateX(200%); }
+    to { transform: translateX(-200%); }
+}
+
+
+.section { padding: 80px 20px; text-align: center; }
+.movie-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.movie-card {
+    outline: #ff0011;
+    width: 200px;
+    background: #000000;
+    color: #ff0011;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: 0.3s;
+    opacity: 0;
+    transform: translateY(50px);
+    object-fit: cover;
+}
+.movie-card:hover { transform: translateY(2px);}
+/*11-Nguyễn Duy Khải*/
+
+.movie-card:hover {
+    transform: translateY(2px);
+    box-shadow: 0 10px 20px rgba(246, 0, 0, 0.5);
+}
+.movie-card img { max-width: 200px;max-height: 200px; width: 100%; transition: 0.3s; }
+.movie-card:hover{transform: scale(1.1);transform: translateY(2px);}
+.reveal.active {
+    opacity: 1;
+    transform: translateY(1px);
+}
+
+
+.cta-btn {
+    padding: 12px 30px;
+    border: none;
+    background: var(--primary);
+    color: white;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: 0.3s;
+    border-radius: 10px;
+}
+
+
+
+.btn-shake {
+    border-radius: 10px;
+    animation: scale 1s infinite;
+}
+@keyframes scale {
+    50% { transform: scale(0.8); }
+    100% { transform: scale(1); }
+    
+}
+.cta-btn:hover {
+    background: black;
+    color: var(--primary);
+}
+
+.contact-info-simple {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+/*11-Nguyễn Duy Khải*/
+.info-box {
+    background: rgba(229, 9, 20, 0.1); 
+    padding: 20px;
+    border-radius: 15px;
+    width: 200px;
+    transition: 0.3s;
+    border: 1px solid transparent;
+}
+
+.info-box:hover {
+    border-color: var(--primary);
+    transform: translateY(-5px);
+    background: rgba(229, 9, 20, 0.2);
+}
+
+.info-box .icon {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.info-box h3 {
+    margin-bottom: 5px;
+    color: var(--primary);
+}
+
+.info-box p {
+    font-weight: bold;
+}
+.chuc{
+/*11-Nguyễn Duy Khải*/
+background-color: #333;
+width: 2000px;
+height: 200px;
+}
+.textchuc{
+    color: #ff0000;
+   font-size: 2rem;
+    float: left;
+    animation: camon 5s infinite;
+}
+@keyframes camon {
+    0% {transform: translateX(250%);}
+    100% {transform: translateX(-100%);}
+}
