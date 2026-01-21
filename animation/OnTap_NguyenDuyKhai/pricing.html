@@ -1,0 +1,66 @@
+<header class="header sticky">
+    <nav class="nav-container">
+        <div class="logo">Khai<span>67</span></div>
+        <ul class="nav-menu">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="features.html">Features</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<link rel="stylesheet" href="assets/css/styleform.css">
+<section class="pricing-section container">
+    <div class="text-center" style="margin-bottom: 40px;" data-aos="fade-up">
+        <h1>Bảng giá linh hoạt</h1>
+        <p>Chọn gói dịch vụ phù hợp nhất với quy mô của bạn</p>
+    </div>
+
+    <div class="tabs-container" data-aos="zoom-in">
+        <div class="tabs-header">
+            <button class="tab-btn active" onclick="openTab(event, 'monthly')">Thanh toán Tháng</button>
+            <button class="tab-btn" onclick="openTab(event, 'yearly')">Thanh toán Năm (Tiết kiệm 20%)</button>
+        </div>
+
+        <div id="monthly" class="tab-content active pricing-grid">
+            <div class="pricing-plan basic">
+                <h4>Starter</h4>
+                <h2>$0<span>/tháng</span></h2>
+                <ul>
+                    <li>1 Project cơ bản</li>
+                    <li>Cơ bản Analytics</li>
+                    <li>Hỗ trợ cộng đồng</li>
+                </ul>
+                <button class="btn-cta" style="width: 100%;">Đăng ký miễn phí</button>
+            </div>
+            
+            <div class="pricing-plan pro featured">
+                <div class="badge">Phổ biến nhất</div>
+                <h4>Professional</h4>
+                <h2>$29<span>/tháng</span></h2>
+                <ul>
+                    <li>Không giới hạn Project</li>
+                    <li>Advanced AI Insights</li>
+                    <li>Hỗ trợ ưu tiên 24/7</li>
+                </ul>
+                <button class="btn-cta" style="width: 100%;">Mua ngay</button>
+            </div>
+        </div>
+
+        <div id="yearly" class="tab-content pricing-grid">
+            <div class="pricing-plan basic">
+                <h4>Starter</h4>
+                <h2>$0<span>/năm</span></h2>
+                <ul><li>Tính năng Starter</li></ul>
+                <button class="btn-cta" style="width: 100%;">Đăng ký</button>
+            </div>
+            <div class="pricing-plan pro featured">
+                <h4>Professional</h4>
+                <h2>$290<span>/năm</span></h2>
+                <ul><li>Tính năng Pro (Tiết kiệm $58)</li></ul>
+                <button class="btn-cta" style="width: 100%;">Mua ngay</button>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="assets/js/app.js"></script>

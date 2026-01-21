@@ -1,0 +1,25 @@
+<link rel="stylesheet" href="assets/css/dangky.css">
+<div class="form-container">
+    <form id="registerForm">
+        <h2>Đăng Ký Thành Viên</h2>
+        
+        <div class="input-group">
+            <input type="text" id="fullname" name="fullname" placeholder=" " required>
+            <label for="fullname">Họ và tên</label>
+            <span class="error-msg">Vui lòng nhập họ tên</span>
+        </div>
+
+        <div class="input-group">
+            <input type="email" id="email" name="email" placeholder=" " required>
+            <label for="email">Email</label>
+            <span class="error-msg">Email không hợp lệ</span>
+        </div>
+
+        <button type="submit" id="btnSubmit">
+            <span class="btn-text">Đăng ký ngay</span>
+            <div class="loader"></div>
+        </button>
+    </form>
+</div>
+
+<div id="toast-container"></div>

@@ -1,0 +1,40 @@
+<header class="header sticky">
+    <nav class="nav-container">
+        <div class="logo">Khai<span>67</span></div>
+        <ul class="nav-menu">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="features.html">Features</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<link rel="stylesheet" href="assets/css/styleform.css">
+<section class="contact-section container" style="padding: 100px 0;">
+    <div class="contact-wrapper" data-aos="fade-up">
+        <h2 style="margin-bottom: 10px;">Liên hệ với chúng tôi</h2>
+        <p style="color: var(--text-gray); margin-bottom: 30px;">Để lại tin nhắn, đội ngũ kỹ thuật sẽ phản hồi bạn trong vòng 2h.</p>
+        
+        <form id="contact-form" onsubmit="handleFormSubmit(event)">
+            <div class="input-group">
+                <input type="text" id="name" placeholder=" " required>
+                <label for="name">Họ và tên</label>
+            </div>
+
+            <div class="input-group">
+                <input type="email" id="email" placeholder=" " required>
+                <label for="email">Email liên hệ</label>
+            </div>
+
+            <div class="input-group">
+                <textarea id="message" rows="5" placeholder=" " required></textarea>
+                <label for="message">Lời nhắn của bạn</label>
+            </div>
+
+            <button type="submit" class="btn-cta" style="width: 100%; justify-content: center; display: flex;">
+                <span class="btn-text">Gửi tin nhắn ngay</span>
+                <div class="loader"></div> </button>
+        </form>
+    </div>
+</section>
+<script src="assets/js/app.js"></script>
